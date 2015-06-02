@@ -1,8 +1,8 @@
-m<-read.csv("data/movie1.csv",header=TRUE)
+m=read.csv("data/movie1.csv",header=TRUE)
 choices<-list()
-for(i in 1:1682){ name<-as.character(m$movie.title[i]); 
-                  c<-list(name);
-                  choices<-append(choices,c)}
+for(i in 1:1682){ name=as.character(m$movie.title[i]); 
+                  c=list(name);
+                  choices=append(choices,c)}
 shinyUI(fluidPage(
   titlePanel("Movie Recommender System"),
   
